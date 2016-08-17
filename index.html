@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attendance System</title>
+<link rel="stylesheet" href="default.css" />
+</head>
+<body>
+  <div id="title-bar">
+          <div id="title">Attendance System</div>
+          <div id="title-bar-btns">
+              <button id="back-btn">←</button>
+              <button id="min-btn">-</button>
+              <button id="max-btn">+</button>
+              <button id="close-btn">x</button>
+          </div>
+     </div>
+  <div id="content">
+    <webview id="main-view" src="http://attendance.pscs.org/"></webview>
+  </div>
+  <script src="default.js">
+  </script>
+</body>
+
+<script>
+    require('./renderer.js')
+</script>
+</html>
